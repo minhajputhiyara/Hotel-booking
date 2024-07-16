@@ -1,0 +1,59 @@
+.bg-cover-custom {
+    background-image: url('path-to-your-image.jpg');
+    background-size: cover;
+    background-position: center;
+  }
+
+  .bg-footer {
+    background-image: url('path-to-your-footer-image.jpg');
+    background-size: cover;
+    background-position: center;
+  }
+
+
+  .amenities {
+    background: #fff;
+    padding: 40px 0;
+    text-align: center;
+    width: 100%;
+}
+
+.amenities .container {
+    max-width: 1000px;
+    margin: auto;
+    padding: 0 15px; /* Added padding to container */
+}
+
+.amenities h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: var(--secondary-color);
+}
+
+.amenities-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    gap: 10px;
+    list-style: none;
+    padding: 0;
+    justify-items: center;
+}
+
+.amenities-list li {
+    font-size: 14px;
+    color: #666;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.amenities-list i {
+    font-size: 20px;
+    color: var(--primary-color);
+}
+
+@media (max-width: 768px) {
+    .amenities-list {
+        grid-template-columns: repeat(3, 1fr); /* Ensuring 3 items per row on smaller screens */
+    }
+}
